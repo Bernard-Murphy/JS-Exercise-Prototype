@@ -114,11 +114,11 @@ Baby.prototype = Object.create(Person.prototype);
 Baby.prototype.constructor = Person;
 
 Baby.prototype.play = function(){
-  return "playing with " + String(this.favoriteToy);
+  return "playing with " + this.favoriteToy;
 }
 
 const matt = new Baby("matt", 1, "pooop");
-
+console.log(matt.play())
 
 /* 
   TASK 4
