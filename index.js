@@ -117,9 +117,6 @@ Baby.prototype.play = function(){
   return "playing with " + this.favoriteToy;
 }
 
-const matt = new Baby("matt", 1, "pooop");
-console.log(matt.play())
-
 /* 
   TASK 4
 
