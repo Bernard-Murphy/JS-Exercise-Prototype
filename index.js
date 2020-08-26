@@ -59,7 +59,13 @@ Person.prototype.toString = function(){
   return String(this.name) + ", " + String(this.age); 
 }
 
-
+var matt = new Person("matt", 25);
+matt.eat("pizza");
+matt.eat("burger");
+console.log(matt);
+matt.poop();
+console.log(matt);
+console.log(matt.toString());
 
 /*
   TASK 2
@@ -98,6 +104,12 @@ Car.prototype.drive = function(distance){
 
 }
 
+var lexus = new Car("lexus", 10);
+lexus.fill(5);
+lexus.drive(10);
+console.log(lexus);
+console.log(lexus.drive(100));
+
 /*
   TASK 3
     - Write a Baby constructor subclassing Person.
@@ -116,6 +128,13 @@ Baby.prototype.constructor = Person;
 Baby.prototype.play = function(){
   return "playing with " + this.favoriteToy;
 }
+
+var babyMatt = new Baby("Matt", 1, "guitar");
+babyMatt.eat("babyfood");
+console.log(babyMatt);
+babyMatt.poop();
+console.log(babyMatt);
+console.log(babyMatt.play());
 
 /* 
   TASK 4
